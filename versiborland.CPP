@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstring>
+#include <windows.h>
 
 // using namespace std;
 
@@ -10,20 +11,24 @@ main(){
     menu:
     cout << "PROJECT TUGAS AKHIR HIMA" << endl;
     cout << "-------------------------------" << endl;
-    cout << "MENU :" << endl;
-    cout << "1. Makanan" << endl;
-    cout << "2. Minuman" << endl;
-    cout << "3. Sayur" << endl;
-    cout << "4. Desserts" << endl;
+    cout << "MENU :\t\t\tTotal belanja anda :" << total << endl;
+    cout << "\t1. Makanan" << endl;
+    cout << "\t2. Minuman" << endl;
+    cout << "\t3. Sayur" << endl;
+    cout << "\t4. Desserts" << endl;
+    cout << "\t5. Exit" << endl;
+    cout << "-------------------------------" << endl;
     cout << "Masukan pilihan anda :"; cin >> pilihan;
 
     switch(pilihan){
         case 1:
         		system("cls");
+            cout << "-------------------------------" << endl;
             cout << "Anda Memilih Makanan" << endl;
             cout << "1. Mie goreng Rp.10000" << endl;
             cout << "2. Nasi goreng Rp.15000" << endl;
             cout << "3. Ayam goreng Rp.20000" << endl;
+            cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
@@ -40,6 +45,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -56,6 +62,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -72,6 +79,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                 default:
@@ -81,10 +89,12 @@ main(){
             break;
         case 2:
         		system("cls");
+            cout << "-------------------------------" << endl;
             cout << "Anda Memilih Minuman" << endl;
             cout << "1. Es teh Rp.5000" << endl;
             cout << "2. Es Kelapa Rp.10000" << endl;
             cout << "3. Es jeruk Rp.7000" << endl;
+            cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
@@ -101,6 +111,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -117,6 +128,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -133,6 +145,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                 default:
@@ -141,10 +154,12 @@ main(){
                 }
         case 3:
             system("cls");
+            cout << "-------------------------------" << endl;
         		cout << "anda memilih sayuran" << endl;
             cout << "Sayur sop iga Rp.15000" << endl;
             cout << "Sayur asem Rp.12000" << endl;
             cout << "Sayur lodeh Rp.11000" << endl;
+            cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
@@ -161,6 +176,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -193,6 +209,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                 default:
@@ -201,10 +218,12 @@ main(){
                 }
         case 4:
         		system("cls");
+            cout << "-------------------------------" << endl;
         		cout << "anda memilih desserts" << endl;
             cout << "Puding mangga Rp.12000" << endl;
             cout << "Pai susu Rp.5000" << endl;
             cout << "Waffle Rp.10000" << endl;
+            cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
@@ -221,6 +240,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -237,6 +257,7 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                     break;
@@ -253,14 +274,29 @@ main(){
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
+                        Sleep(2000);
                         return 0;
                     }
                 default:
-                    cout << "anda salah memasukan angka!!!" << endl;
+                    cout << "anda salah memasukan angka!!!" << endl;\
+                    Sleep(2000);
                 goto menu;
                 }
+        case 5:
+            if(total > 1){
+                cout << "total belanjaan anda adalah =" << total << endl;
+                cout << "terima kasih telah berbelanja" << endl;
+                Sleep(2000);
+                return 0;
+            }else{
+                cout << "anda belum membeli apapun" << endl;
+                Sleep(2000);
+                return 0;
+            }
+            break;
         default:
             cout << "anda salah memasukan angka!!!" << endl;
+            Sleep(2000);
         goto menu;
 	}
 }

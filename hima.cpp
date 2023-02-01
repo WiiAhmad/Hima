@@ -24,9 +24,9 @@ main(){
         		system("cls");
             cout << "-------------------------------" << endl;
             cout << "Anda Memilih Makanan" << endl;
-            cout << "1. Mie goreng Rp.10000" << endl;
-            cout << "2. Nasi goreng Rp.15000" << endl;
-            cout << "3. Ayam goreng Rp.20000" << endl;
+            cout << "1. Mie goreng    Rp.10000" << endl;
+            cout << "2. Nasi goreng   Rp.15000" << endl;
+            cout << "3. Ayam goreng   Rp.20000" << endl;
             cout << "-------------------------------" << endl;
             cout << "Masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
@@ -87,9 +87,9 @@ main(){
         		system("cls");
             cout << "-------------------------------" << endl;
             cout << "Anda Memilih Minuman" << endl;
-            cout << "1. Es teh Rp.5000" << endl;
-            cout << "2. Es Kelapa Rp.10000" << endl;
-            cout << "3. Es jeruk Rp.7000" << endl;
+            cout << "1. Es teh         Rp.5000" << endl;
+            cout << "2. Es Kelapa      Rp.10000" << endl;
+            cout << "3. Es jeruk       Rp.7000" << endl;
             cout << "-------------------------------" << endl;
             cout << "Masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
@@ -149,9 +149,9 @@ main(){
             system("cls");
             cout << "-------------------------------" << endl;
         	cout << "Anda memilih sayuran" << endl;
-            cout << "Sayur sop iga Rp.15000" << endl;
-            cout << "Sayur asem Rp.12000" << endl;
-            cout << "Sayur lodeh Rp.11000" << endl;
+            cout << "Sayur sop iga      Rp.15000" << endl;
+            cout << "Sayur asem         Rp.12000" << endl;
+            cout << "Sayur lodeh        Rp.11000" << endl;
             cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){

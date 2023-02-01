@@ -1,8 +1,8 @@
 #include <iostream>
 #include <cstring>
-#include <windows.h>
-using namespace std;
+#include <conio.h>
 
+using namespace std;
 int jumlah, pilihan, pilihan2, total, harga;
 string yn; 
 
@@ -28,61 +28,58 @@ main(){
             cout << "2. Nasi goreng Rp.15000" << endl;
             cout << "3. Ayam goreng Rp.20000" << endl;
             cout << "-------------------------------" << endl;
-            cout << "masukan pilihan anda : "; cin >> pilihan2;
+            cout << "Masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
                 system("cls");
-                cout << "anda memesan mie goreng, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan mie goreng, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 10000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                 cout << pilihan2;
                     if(yn == "y" || yn == "Y"){
                     		system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 2:
                 system("cls");
-                cout << "anda memesan nasi goreng, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan nasi goreng, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 15000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 3:
                 system("cls");
-                cout << "anda memesan ayam goreng, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan ayam goreng, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 20000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
                         cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        getch();
                     }
                 default:
-                cout << "anda salah memasukan pilihan!!!" << endl;
+                cout << "ANDA SALAH MEMASUKAN PILIHAN!!!" << endl;
                 goto menu;
                 }
             break;
@@ -94,67 +91,64 @@ main(){
             cout << "2. Es Kelapa Rp.10000" << endl;
             cout << "3. Es jeruk Rp.7000" << endl;
             cout << "-------------------------------" << endl;
-            cout << "masukan pilihan anda : "; cin >> pilihan2;
+            cout << "Masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
                 case 1:
                 system("cls");
-                cout << "anda memesan Es teh, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan Es teh, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 5000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                 cout << pilihan2;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 2:
                 system("cls");
-                cout << "anda memesan Es Kelapa, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan Es Kelapa, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 10000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 3:
                 system("cls");
-                cout << "anda memesan Es jeruk, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan Es jeruk, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 7000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                 default:
-                cout << "anda salah memasukan pilihan!!!" << endl;
+                cout << "ANDA SALAH MEMASUKAN PILIHAN!!!" << endl;
                 goto menu;
                 }
         case 3:
             system("cls");
             cout << "-------------------------------" << endl;
-        		cout << "anda memilih sayuran" << endl;
+        	cout << "Anda memilih sayuran" << endl;
             cout << "Sayur sop iga Rp.15000" << endl;
             cout << "Sayur asem Rp.12000" << endl;
             cout << "Sayur lodeh Rp.11000" << endl;
@@ -163,65 +157,63 @@ main(){
             switch(pilihan2){
                 case 1:
                 system("cls");
-                cout << "anda memesan sop iga, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan sop iga, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 15000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                 cout << pilihan2;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 2:
                 system("cls");
-                cout << "anda memesan sayur asem, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan sayur asem, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 12000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 3:
                 system("cls");
-                cout << "anda memesan sayur lodeh, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan sayur lodeh, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 11000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                 default:
-                cout << "anda salah memasukan pilihan!!!" << endl;
+                cout << "ANDA SALAH MEMASUKAN PILIHAN!!!" << endl;
                 goto menu;
                 }
         case 4:
         		system("cls");
             cout << "-------------------------------" << endl;
-        		cout << "anda memilih desserts" << endl;
-            cout << "Puding mangga Rp.12000" << endl;
-            cout << "Pai susu Rp.5000" << endl;
-            cout << "Waffle Rp.10000" << endl;
+        	cout << "Anda memilih desserts" << endl;
+            cout << "Puding mangga    Rp.12000" << endl;
+            cout << "Pai susu         Rp.5000" << endl;
+            cout << "Waffle           Rp.10000" << endl;
             cout << "-------------------------------" << endl;
             cout << "masukan pilihan anda : "; cin >> pilihan2;
             switch(pilihan2){
@@ -231,71 +223,64 @@ main(){
                 cin >> jumlah;
                 harga = jumlah * 12000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                 cout << pilihan2;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 2:
                 system("cls");
-                cout << "anda memesan pai susu, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan pai susu, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 5000;
                 total = harga + total;
                 cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                     break;
                 case 3:
                 system("cls");
-                cout << "anda memesan waffle, masukan jumlah yang ingin anda beli :";
+                cout << "Anda memesan waffle, masukan jumlah yang ingin anda beli :";
                 cin >> jumlah;
                 harga = jumlah * 10000;
                 total = harga + total;
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "apakah anda ingin membeli lagi? "; cin >> yn;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Apakah anda ingin membeli lagi? (y/n)"; cin >> yn;
                     if(yn == "y" || yn == "Y"){
                     system("cls");
                         goto menu;
                     }else if(yn == "n" || yn == "N"){
-                        cout << "terima kasih telah berbelanja" << endl;
-                        Sleep(2000);
-                        return 0;
+                        cout << "Terimakasih telah berbelanja :)" << endl;
+                        getch();
                     }
                 default:
-                    cout << "anda salah memasukan angka!!!" << endl;\
-                    Sleep(2000);
+                    cout << "ANDA SALAH MEMASUKAN PILIHAN!!!" << endl;
                 goto menu;
                 }
         case 5:
             if(total > 1){
-                cout << "total belanjaan anda adalah =" << total << endl;
-                cout << "terima kasih telah berbelanja" << endl;
-                Sleep(2000);
-                return 0;
+                cout << "Total belanjaan anda adalah =" << total << endl;
+                cout << "Terimakasih telah berbelanja :)" << endl;
+                getch();
             }else{
-                cout << "anda belum membeli apapun" << endl;
-                Sleep(2000);
-                return 0;
+                cout << "Anda belum membeli apapun" << endl;
+                getch();
             }
             break;
         default:
-            cout << "anda salah memasukan angka!!!" << endl;
-            Sleep(2000);
+            cout << "ANDA SALAH MEMASUKAN PILIHAN!!!" << endl;
         goto menu;
 	}
 }
